@@ -1,0 +1,72 @@
+/* ================================================================
+   App - 로그인 화면 + 최상위 채팅 컨테이너 스타일
+   ================================================================ */
+
+/* ── 로그인 화면 ─────────────────────────────────────────────── */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginBox {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 360px;
+}
+
+.loginBox h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.loginDesc {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+.loginBox input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.loginBox input:focus {
+  border-color: #3498db;
+}
+
+.loginBox button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.loginBox button:hover {
+  background-color: #2980b9;
+}
+
+/* ── 채팅방 최상위 레이아웃 ──────────────────────────────────── */
+.chatContainer {
+  display: flex;
+  height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,93 @@
+/* ================================================================
+   Sidebar - 접속자 목록 사이드바 스타일
+   ================================================================ */
+.sidebar {
+  width: 200px;
+  min-width: 200px;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.sidebar h3 {
+  font-size: 0.9rem;
+  color: #bdc3c7;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #3d5166;
+}
+
+.userList {
+  list-style: none;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.userItem {
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  transition: background 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userItem:hover {
+  background: #3d5166;
+}
+
+/* 나 자신 - 클릭 불가, 강조 표시 */
+.userItem.me {
+  color: #f1c40f;
+  cursor: default;
+  font-weight: bold;
+}
+
+.userItem.me:hover {
+  background: transparent;
+}
+
+/* 귓속말 대상으로 선택된 사용자 강조 */
+.userItem.whisperTarget {
+  background: #e74c3c;
+  color: white;
+}
+
+.cancelWhisperBtn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: 8px;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.cancelWhisperBtn:hover {
+  background: #c0392b;
+}
+
+.leaveBtn {
+  background: #7f8c8d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 12px;
+  width: 100%;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.leaveBtn:hover {
+  background: #636e72;
+}

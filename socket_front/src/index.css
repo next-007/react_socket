@@ -1,0 +1,15 @@
+/* ================================================================
+   전역 기본 스타일 - CSS Module이 아닌 전역으로 적용되어야 할 것들
+   main.jsx에서 import 해서 전체 앱에 적용된다.
+   ================================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f2f5;
+  height: 100vh;
+}
