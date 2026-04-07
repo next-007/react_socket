@@ -177,7 +177,7 @@ messagingTemplate.convertAndSend("/sub/dm/" + receiver, msg);
 
 **⑤ 서버 메모리 기반 관리의 한계**
 
-- 이 예제는 `ConcurrentHashMap`으로 접속자를 관리한다.
+- 이 예제는 `HashMap`으로 접속자를 관리한다.
 - 장점: DB 없이 빠르고 단순하게 구현 가능
 - 단점:
   - 서버 재시작 시 모든 데이터 소멸
